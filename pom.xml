@@ -10,47 +10,52 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>WEBJAR_ID</artifactId>
-    <version>UPSTREAM_VERSION-SNAPSHOT</version>
-    <name>WEBJAR_NAME</name>
-    <description>WebJar for WEBJAR_NAME</description>
+    <artifactId>restangular</artifactId>
+    <version>0.6.3-SNAPSHOT</version>
+    <name>Restangular</name>
+    <description>WebJar for Restangular</description>
     <url>http://webjars.org</url>
 
     <developers>
         <developer>
-            <id>YOUR_ID</id>
-            <name>YOUR_NAME</name>
-            <email>YOUR_EMAIL</email>
+            <id>jamesward</id>
+            <name>James Ward</name>
+            <email>james@jamesward.com</email>
         </developer>
     </developers>
 
     <licenses>
         <license>
-            <name>UPSTREAM_LICENSE_NAME</name>
-            <url>UPSTREAM_LICENSE_VERSION</url>
+            <name>MIT</name>
+            <url>https://github.com/mgonto/restangular/blob/master/license.md</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/WEBJAR_ID</url>
-        <connection>scm:git:https://github.com/webjars/WEBJAR_ID.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/WEBJAR_ID.git</developerConnection>
+        <url>http://github.com/webjars/restangular</url>
+        <connection>scm:git:https://github.com/webjars/restangular.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/restangular.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     
     <dependencies>
         <dependency>
             <groupId>org.webjars</groupId>
-            <artifactId>ANOTHER_WEBJAR_ID</artifactId>
-            <version>ANOTHER_WEBJAR_VERSION</version>
+            <artifactId>lodash</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angularjs</artifactId>
+            <version>1.1.4</version>
         </dependency>
     </dependencies>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>UPSTREAM_VERSION</upstream.version>
-        <upstream.url>UPSTREAM_URL</upstream.url>
+        <upstream.version>0.6.3</upstream.version>
+        <upstream.url>https://raw.github.com/mgonto/restangular/${upstream.version}/dist</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
     
@@ -69,7 +74,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.js</fromFile>
+                            <fromFile>restangular.js</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
@@ -81,7 +86,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.min.js</fromFile>
+                            <fromFile>restangular.min.js</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>

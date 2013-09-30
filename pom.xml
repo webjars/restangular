@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>restangular</artifactId>
-    <version>0.6.4-SNAPSHOT</version>
+    <version>1.1.3</version>
     <name>Restangular</name>
     <description>WebJar for Restangular</description>
     <url>http://webjars.org</url>
@@ -21,6 +21,11 @@
             <id>jamesward</id>
             <name>James Ward</name>
             <email>james@jamesward.com</email>
+        </developer>
+        <developer>
+            <id>nano4711</id>
+            <name>Gerhard Hipfinger</name>
+            <email>gerhard.hipfinger@openforce.com</email>
         </developer>
     </developers>
 
@@ -54,7 +59,7 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>0.6.3</upstream.version>
+        <upstream.version>1.1.3</upstream.version>
         <upstream.url>https://raw.github.com/mgonto/restangular/${upstream.version}/dist</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>

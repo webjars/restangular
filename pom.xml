@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>restangular</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.1-SNAPSHOT</version>
     <name>Restangular</name>
     <description>WebJar for Restangular</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
         <url>http://github.com/webjars/restangular</url>
         <connection>scm:git:https://github.com/webjars/restangular.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/restangular.git</developerConnection>
-        <tag>restangular-1.3.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>

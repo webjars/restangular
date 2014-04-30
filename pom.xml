@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>restangular</artifactId>
-    <version>1.4.1-SNAPSHOT</version>
+    <version>1.4.0-1-SNAPSHOT</version>
     <name>Restangular</name>
     <description>WebJar for Restangular</description>
     <url>http://webjars.org</url>
@@ -62,6 +62,12 @@
         <upstream.version>1.4.0</upstream.version>
         <upstream.url>https://raw.github.com/mgonto/restangular/${upstream.version}/dist</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                paths: { "restangular": "restangular" },
+                shim: { "restangular": [ "angular", "lodash" ] }
+            }
+        </requirejs>
     </properties>
     
     <build>

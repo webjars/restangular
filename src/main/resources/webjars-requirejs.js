@@ -1,7 +1,6 @@
 /*global requirejs */
 
 requirejs.config({
-    shim: {
-        'restangular': [ 'webjars!angular.js', 'webjars!lodash.js' ]
-    }
+    paths: { 'restangular': webjars.path('restangular', 'restangular') },
+    shim: { 'restangular': [ 'webjars!angular.js', 'webjars!lodash.js' ] }
 });

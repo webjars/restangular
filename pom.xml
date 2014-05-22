@@ -64,8 +64,8 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
-                paths: { "restangular": "restangular" },
-                shim: { "restangular": [ "angular", "lodash" ] }
+                "paths": { "restangular": "restangular" },
+                "shim": { "restangular": [ "angular", "lodash" ] }
             }
         </requirejs>
     </properties>
